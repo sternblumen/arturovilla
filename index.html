@@ -1,114 +1,578 @@
-<!doctype html>
-<html lang="">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arturo Villa Diseñador Industrial</title>
+    <title>Luis Arturo Villa Martínez</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+      .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
+}
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.profile-pic {
+  padding: 20px 0;
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+.social-link {
+  margin-left: 5px;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover {
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover {
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover {
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover {
+  color: #005983;
+}
+.link-skype {
+  color: #12a5f4;
+}
+.link-skype:hover {
+  color: #0986ca;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <!-- build:css styles/components/main.min.css -->
-    <link rel="stylesheet" href="styles/h5bp.css">
-    <link rel="stylesheet" href="styles/components/components.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    </style>
   </head>
+
   <body>
-    <header class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">Arturo Villa</h1>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
+    <script>
+      window.onload = function () {
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( ".js-tooltip" ).tooltip();
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <section class="col-md-3 card-wrapper affix">
+          <div class="card profile-card">
+              <div class="profile-pic">
+                <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
+                  alt="64x64" src="http://www.gravatar.com/avatar/18664655619a161fb29f962d864489cc?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
+              </div>
+              <h3 class="text-center text-bolder"> Luis Arturo Villa Martínez</h3>
+              <h5 class="text-muted text-center">Diseñador </h5>
+              <hr>
+
+              <div class="contact-details clearfix">
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+
+                      <span class="info">
+                        México D.F, ,
+                        MX
+                      </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-phone"></i>
+                    </span>
+
+                    <span class="info">
+                      044 55 23 44 19 57
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
+
+                    <span class="info">
+                      arturo.villa.mtz@gmail.com
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon" title="Languages I speak">
+                      <i class="fa fa-lg fa-language"></i>
+                    </span>
+
+                    <span class="info">
+                      English
+                    </span>
+                  </div>
+              </div>
+
+              <hr>
+
+              <div class="social-links text-center">
+                  <a class="fa fa-linkedin fa-2x social-link link-linkedin"
+                       href="https://www.linkedin.com/pub/arturo-villa/85/953/430" target="_blank"></a>
+                  <a class="fa fa-rss fa-2x social-link link-blog"
+                       href="https://www.behance.net/arturo_villa" target="_blank"></a>
+              </div>
+          </div>
+        </section>
+
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <h4 class="text-uppercase text-bolder">Background</h4>
+            <hr>
+
+            <div class="background-details">
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa fa-lg fa-user"></i>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    About
+                  </h4>
+
+                  <div class="content">
+                    Soy Diseñador Industrial  egresado de la UAM Azcapotzalco, especializado en el área de comunicación gráfica y técnica de proyectos.
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa fa-lg fa-building"></i>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Work Experience
+                  </h4>
+
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p><strong>CEO/President</strong>,&nbsp;Pied Piper</p>
+                          <p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+                            <ul>
+                                <li> Build an algorithm for artist to detect if their music was violating copy right infringement laws </li>
+                                <li> Successfully won Techcrunch Disrupt </li>
+                                <li> Optimized an algorithm that holds the current world record for Weisman Scores </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center">
+                          <p>
+                            <strong>Joined:</strong>&nbsp;
+                            Nov, 2013
+                          </p>
+                          <p>
+                              <strong>Left:</strong>&nbsp;
+                              Nov, 2014
+                          </p>
+                          <p>
+                            <i class="fa fa-clock-o icon-left"></i>
+                            1 year
+                          </p>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa fa-lg fa-code"></i>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Skills
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Web Development</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">HTML</span>
+                                <span class="label label-keyword">CSS</span>
+                                <span class="label label-keyword">Javascript</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level js-tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Compression</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Mpeg</span>
+                                <span class="label label-keyword">MP4</span>
+                                <span class="label label-keyword">GIF</span>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Education
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p>
+                              <strong>Information Technology, Bachelor</strong>,&nbsp;
+                              University of Oklahoma
+                            </p>
+                            <i>4.0</i>
+                            <div class="space-top labels">
+                                <span class="label label-keyword">DB1101 - Basic SQL</span>
+                                <span class="label label-keyword">CS2011 - Java Introduction</span>
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center">
+                            <p>
+                              <strong>Started:</strong>&nbsp;
+                              May, 2011
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>&nbsp;
+                                Dec, 2013
+                            </p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                <div class="detail">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-trophy"></i>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Awards
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p>
+                                <strong>Digital Compression Pioneer Award</strong>,&nbsp;
+                                Techcrunch
+                              </p>
+                              <p class="clear-margin"> There is no spoon. </p>
+                            </div>
+                            <div class="sidebar text-muted text-center">
+                              <p>
+                                <strong>Awarded on:</strong>&nbsp;
+                                Oct 31, 2014
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-child"></i>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Volunteer Work
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p>
+                                <strong>Teacher</strong>,&nbsp;
+                                CoderDojo
+                              </p>
+                              <p>Global movement of free coding clubs for young people.</p>
+                              <ul>
+                                  <li> Awarded &#x27;Teacher of the Month&#x27; </li>
+                              </ul>
+                            </div>
+                            <div class="sidebar text-muted text-center">
+                              <p>
+                                <strong>Since:</strong>&nbsp;
+                                Dec, 2011
+                              </p>
+                              <p>
+                                  <strong>Until:</strong>&nbsp;
+                                  Dec, 2012
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-book"></i>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Publications
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p>
+                                <strong>
+                                    <a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"  target="_blank">Video compression for 3d media</a>
+                                </strong>,&nbsp;
+                                Hooli
+                              </p>
+                              <p class="clear-margin">Innovative middle-out compression algorithm that changes the way we store data.</p>
+                            </div>
+                            <div class="sidebar text-muted text-center">
+                              <p>
+                                <strong>Published on:</strong>&nbsp;
+                                Sep 30, 2014
+                              </p>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-heart"></i>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Interests
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <p>
+                              <strong>Wildlife</strong>
+                            </p>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Ferrets</span>
+                                <span class="label label-keyword">Unicorns</span>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-thumbs-up"></i>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      References
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <p>
+                              <strong>Erlich Bachman</strong>
+                            </p>
+                            <blockquote>
+                              <p class="clear-margin">It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
+                            </blockquote>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
         </section>
       </div>
-    </header>
-
-    <nav class="navdrawer-container promote-layer">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#hello">Hola</a></li>
-        <li><a href="#get-started">Descargar Currículum en PDF</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <h1 id="hello">Hello!</h1>
-      <p>Welcome to Web Starter Kit.</p>
-
-      <h2 id="get-started">Get Started.</h2>
-      <p>Read how to <a href="http://developers.google.com/web/starter-kit">Get Started</a> or check out the <a href="styleguide/index.html">Style Guide</a>.</p>
-    </main>
-
-    <section class="styleguide__featured-section">
-    <div class="featured-section">
-        <div class="container-medium">
-            <ul class="featured-list">
-                <li class="featured-list__item clear">
-                    <div class="container-small">
-                        <div class="featured-list__content g--half">
-                            <h3>Case study</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-                            <a href="#ignore-click" class="cta--primary">View Google</a>
-                        </div>
-                        <div class="featured-list__img-wrapper g--half g--last">
-                            <div class="featured-list__img">
-                                <img src="../images/icons/placeholder--small.png" alt="small image placeholder example">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="featured-list__item clear">
-                    <div class="container-small">
-                        <div class="featured-list__content g--half">
-                            <h3>Case study</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, incidunt harum aut quae eaque sequi sunt molestiae tenetur vitae.</p>
-                            <a href="#ignore-click" class="cta--primary">View Google</a>
-                        </div>
-                        <div class="featured-list__img-wrapper g--half g--last">
-                            <div class="featured-list__img">
-                                <img src="../images/icons/placeholder--small.png" alt="small image placeholder example">
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </div>
-</section>
 
-    <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- Built with love using Web Starter Kit -->
+    <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
   </body>
 </html>
