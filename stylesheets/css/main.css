@@ -1,1 +1,7 @@
-body { background-color: #333333; color: #FF7D7C; font-family: 'Vollkorn', serif; text-align: center; }
+body { background-color: #333333; }
+
+a { color: #FB8701; }
+a:hover { color: #B5610D; }
+
+.card-profile { background: #333333; border-color: #333333; color: #fff; }
+.card-profile hr { border-top: 1px solid #4D4D4D; }
