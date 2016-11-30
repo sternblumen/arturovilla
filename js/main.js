@@ -53,7 +53,7 @@
             }, 500);
 
         });
-    } 
+    }
 
     /*-------------------------------------------
         SCROLL TO TOP BUTTON
@@ -85,8 +85,8 @@
      VENOBOX/LIGHT BOX PLUGIN.
     --------------------------------------------- */
     $('.venobox').venobox({
-        numeratio: true, 
-        framewidth: '50%' 
+        numeratio: true,
+        framewidth: '70%'
     });
 
     /* ---------------------------------------------
@@ -108,7 +108,7 @@
 
     /* ---------------------------------------------
      OFF CANVASS MENU HANDLER
-    --------------------------------------------- */    
+    --------------------------------------------- */
     $('.flay-out-menu-btn').on('click', function() {
         $('.header-left').toggleClass('flay-header-in');
         $(this).toggleClass('flay-close');
@@ -177,19 +177,19 @@
 
     /*------------------------------------------------
      WOW JS ACTIVATION
-    -------------------------------------------------- */    
+    -------------------------------------------------- */
     new WOW().init();
 
     /*------------------------------------------------
-     BOOTSTRAP ACCORDION 
+     BOOTSTRAP ACCORDION
     -------------------------------------------------- */
     $('.panel-heading a').on('click',function(e){
         if($(this).parents('.panel').children('.panel-collapse').hasClass('in')){
             e.stopPropagation();
         }
         e.preventDefault();
-    });  
-    
+    });
+
     /*--------------------------------
     MOBILE MENU ACTIVE
     -----------------------------------*/
