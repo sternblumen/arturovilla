@@ -19,7 +19,8 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "admin@wpdna.com";
+        $recipient = "sternblumen@gmail.com";
+        //arturo.villa.mtz@gmail.com
 
         // Set the email subject.
         $subject = "Subject: $subject";
